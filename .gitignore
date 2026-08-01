@@ -1,0 +1,24 @@
+# Muster's canonical state is plain text in the journal — this cache is disposable.
+# Deleting it costs a recompile, never knowledge.
+.muster/cache/
+
+# muster's OWN dogfood store — a demo artifact from running `muster init` on this repo.
+# (A real project COMMITS its .muster/ — that's the git-native distribution story. We
+# don't commit ours: the belief set is a moving experiment, not part of the source.)
+.muster/
+.muster-private/
+node_modules/
+dist/
+coverage/
+*.log
+.DS_Store
+
+# Never commit a local env file — MUSTER_LLM_KEY lives in the environment, never on disk
+# in the repo. Defensive: this file doesn't exist today, and it must never start to.
+.env
+.env.*
+!.env.example
+
+# Internal audit notes map the still-open weaknesses line-by-line — a working artifact,
+# not something to publish. Kept local, never committed (PUB-1).
+docs/audit/
