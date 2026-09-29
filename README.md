@@ -1,6 +1,6 @@
 # Muster
 
-Hey, dev here. I vibe coded this and stopped using it within a few days. So tbh it's probably not very useful.
+## Hey, dev here. I vibe coded this and stopped using it within a few days. So tbh it's probably not very useful.
 
 Muster gives an AI coding agent memory between sessions. It stores what the agent learns about your repo as small, checkable facts, and before each task it compiles the relevant ones into a briefing that fits a token budget. Every fact knows which change in the code would make it false — when that change lands, the fact dies, and the next briefing carries a warning instead of stale advice.
 
